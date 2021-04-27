@@ -1,10 +1,11 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navigation = (props) => {
   const menuItems = [
     {
       title: 'Home',
-      link: '#'
+      link: '/'
     },
     {
       title: 'Projects',
@@ -16,7 +17,9 @@ const Navigation = (props) => {
     <nav role="navigation" className="primary-navigation navigation">
       <ul className="nav-list">
         {menuItems.map( (item) => 
-        <li className="nav-item">{ item.title }</li>
+        <li className="nav-item">
+          <NavLink to={item.link}>{ item.title }</NavLink>
+        </li>
         )}
       </ul>
     </nav>
