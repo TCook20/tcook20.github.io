@@ -17,7 +17,7 @@ class ContactCard extends Component {
     return (
       <div className="contactCard">
         <h2>{ name }</h2>
-        <p><i className="material-icons">email</i></p>
+        <p><i className="material-icons">email</i> {email }</p>
       </div>
     );
   }
