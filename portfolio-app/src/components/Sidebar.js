@@ -1,29 +1,15 @@
 import '../Sidebar.css';
 import React from 'react';
+
+// Components
 import ContactCard from './ContactCard';
+import Navigation from './Navigation';
 
 const Sidebar = (props) => {
-  const menuItems = [
-    {
-      title: 'Home',
-      link: '#'
-    },
-    {
-      title: 'Projects',
-      link: '/projects'
-    }
-  ];
-
   return (
     <aside>
       <ContactCard />
-      <nav role="navigation" className="primary-navigation navigation">
-        <ul className="nav-list">
-          { menuItems.map( (item) => 
-          <li className="nav-item">{ item.title }</li>
-          )}
-        </ul>
-      </nav>
+      <Navigation />
     </aside>
   );
 }
