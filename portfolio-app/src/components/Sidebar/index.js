@@ -1,4 +1,4 @@
-import '../Sidebar.css';
+import './style.css';
 import React from 'react';
 
 // Components
