@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -11,11 +11,11 @@ function App() {
       <div className="App">
         <Header />
         <main>
+          <Sidebar />
           <article>
             <Route exact path="/" component={ () => <Home />} />
             <Route path="/projects" component={ () => <Projects />} />
-          </article>
-          <Sidebar />
+          </article>  
         </main>
       </div>
     </BrowserRouter>
