@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import React from 'react';
 
 // Components
@@ -8,7 +8,11 @@ import Navigation from '../Navigation';
 const Sidebar = (props) => {
   return (
     <aside>
-      <ContactCard />
+      <ContactCard
+        name={ 'Travis W. Cook' }
+        position={ 'Front End Developer' }
+        email={ 'twcook2007@gmail.com' }
+      />
       <Navigation />
     </aside>
   );
