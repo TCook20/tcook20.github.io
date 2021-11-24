@@ -2,8 +2,8 @@ import './App.scss';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import Home from './components/Home';
-import Projects from './components/Projects';
+import Home from './components/Pages/Home';
+import Projects from './components/Pages/Projects';
 
 function App() {
   return (
