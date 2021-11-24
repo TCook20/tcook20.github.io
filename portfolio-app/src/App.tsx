@@ -1,5 +1,9 @@
-import './App.scss';
 import { BrowserRouter, Route } from 'react-router-dom';
+
+// Assets
+import './App.scss';
+
+// Components
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Home from './components/Pages/Home';
@@ -9,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
+        <Header title="Portfolio Site" />
         <main>
           <Sidebar />
           <article>
