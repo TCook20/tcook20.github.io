@@ -1,8 +1,36 @@
 {
   "projects": [
     {
+      "name": "University of Missouri Design System",
+      "url": "https://designsystem.missouri.edu",
+      "description": "",
+      "img_src": "",
+      "img_alt": ""
+    },
+    {
       "name": "Majors at Mizzou",
       "url": "https://majors.missouri.edu",
+      "description": "",
+      "img_src": "",
+      "img_alt": ""
+    },
+    {
+      "name": "General Education Program",
+      "url": "https://generaleducation.missouri.edu",
+      "description": "",
+      "img_src": "",
+      "img_alt": ""
+    },
+    {
+      "name": "MU Career Center",
+      "url": "https://career.missouri.edu",
+      "description": "",
+      "img_src": "",
+      "img_alt": ""
+    },
+    {
+      "name": "Office of Civil Rights &amp; Title IX",
+      "url": "https://civilrights.missouri.edu",
       "description": "",
       "img_src": "",
       "img_alt": ""
