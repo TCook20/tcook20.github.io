@@ -2,7 +2,10 @@
   "name": "portfolio-app",
   "version": "0.1.0",
   "private": true,
-  "author": "Travis Cook",
+  "author": {
+    "name": "Travis Cook",
+    "email": "twcook2007@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TCook20/tcook20.github.io.git"
@@ -46,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.8"
   }
 }
