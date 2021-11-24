@@ -15,7 +15,7 @@ const ContactCard = ({
   email,
   cvLink,
   image,
-}) => {
+}: ContactCardProps) => {
 
   return (
     <div className="contactCard">
