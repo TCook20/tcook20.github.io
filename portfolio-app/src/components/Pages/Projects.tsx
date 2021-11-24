@@ -1,10 +1,10 @@
 import React from 'react';
 
 // Context
-import data from '../projects.json';
+import data from '../../projects.json';
 
 // Components
-import Project from './Project';
+import Project from '../Project/Project';
 
 export interface ProjectsProps {
   title: string
