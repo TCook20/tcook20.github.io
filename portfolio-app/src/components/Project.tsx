@@ -1,29 +1,20 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 
-class Project extends PureComponent {
-  static propTypes = {
-    title: PropTypes.string,
-    url: PropTypes.string,
-    description: PropTypes.string,
-  };
+export interface ProjectProps {
+  title: string
+  url: string
+  description?: React.ReactNode
+}
+const Project = ({ title, url, description }: ProjectProps) => {
 
-  render() {
-    const {
-      title,
-      url,
-      description
-    } = this.props;
-
-    return (
-      <div className="project-card">
-        <h3><a href={ url }>{ title }</a></h3>
-        <div class="card-body">
-          { description }
-        </div>
+  return (
+    <div className="project-card">
+      <h3 className="project-title"><a href={ url }>{ title }</a></h3>
+      <div className="project-card-body">
+        { description }
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Project;

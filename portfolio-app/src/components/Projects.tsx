@@ -1,15 +1,26 @@
 import React from 'react';
-import Project from './Project';
+
+// Context
 import data from '../projects.json';
 
-const Projects = (props) => {
-  const projectList = data.projects;
+// Components
+import Project from './Project';
+
+export interface ProjectsProps {
+  title: string
+  list: any
+}
+
+const Projects = ({
+  title = 'Project Portfolio',
+  list = data.projects,
+}) => {
 
   return (
     <>
-      <h2>Project Portfolio</h2>
+      <h2>{title}</h2>
       <div className="project-archive">
-        {projectList.map(project => (
+        {list.map(project => (
           <Project
             title={ project.name }
             url={ project.url }

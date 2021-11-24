@@ -3,22 +3,19 @@ import { NavLink } from 'react-router-dom';
 
 import './style.scss';
 
-const Navigation = (props) => {
-  const menuItems = [
-    {
-      title: 'Home',
-      link: '/'
-    },
-    {
-      title: 'Projects',
-      link: '/projects'
-    }
-  ]
 
+export interface NavigationProps {
+  list: any
+}
+
+const Navigation = ({
+  list
+}: NavigationProps) => {
+  
   return (
     <nav role="navigation" className="primary-navigation navigation">
       <ul className="nav-list">
-        {menuItems.map( (item) => 
+        {list.map( (item) => 
         <li className="nav-item">
           <NavLink to={item.link}>{ item.title }</NavLink>
         </li>
