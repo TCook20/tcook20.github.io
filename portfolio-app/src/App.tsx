@@ -1,29 +1,35 @@
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Assets
-import './App.scss';
+import './App.scss'
 
 // Components
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Home from './components/Pages/Home';
-import Projects from './components/Pages/Projects';
+import Header from './components/Header'
+import Sidebar from './components/Sidebar'
+import Home from './components/Pages/Home'
+import Projects from './components/Pages/Projects'
 
-function App() {
+export interface AppProps {
+  title: string
+}
+
+const App = ({ title= 'Portfolio Site' }: AppProps) => {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
-        <Header title="Portfolio Site" />
+        <Header title={title} />
         <main>
           <Sidebar />
           <article>
-            <Route exact path="/" component={ () => <Home />} />
-            <Route path="/projects" component={ () => <Projects />} />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+            </Routes>
           </article>  
         </main>
       </div>
-    </BrowserRouter>
-  );
+    </Router>
+  )
 }
 
-export default App;
+export default App
