@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import classnames from 'classnames';
 
 // Assets
 import './App.scss'
@@ -16,7 +17,7 @@ export interface AppProps {
 const App = ({ title= 'Portfolio Site' }: AppProps) => {
   return (
     <Router>
-      <div className="App">
+      <div className={ classnames( 'App' ) }>
         <Header title={title} />
         <main>
           <Sidebar />

@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 // Context
 import data from '../../projects.json';
@@ -19,7 +20,7 @@ const Projects = ({
   return (
     <>
       <h2>{title}</h2>
-      <div className="project-archive">
+      <div className={ classnames( 'project-archive' ) }>
         {list.map(project => (
           <Project
             title={ project.name }
