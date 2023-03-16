@@ -1,6 +1,33 @@
 {
   "projects": [
     {
+      "name": "Mizzou WordPress Hybrid Theme",
+      "url": "",
+      "description": "",
+      "start_date": "",
+      "end_date": "",
+      "img_alt": "",
+      "img_src": ""
+    },
+    {
+      "name": "University of Missouri Tuition Calculator",
+      "url": "https://cashiers.missouri.edu/cost/new-tuition-structure/",
+      "description": "React-based calculator.",
+      "start_date": "",
+      "end_date": "",
+      "img_alt": "",
+      "img_src": ""
+    },
+    {
+      "name": "University of Missouri Custom WordPress Blocks",
+      "url": "",
+      "description": "Custom built WordPress blocks utilizing the University of Missouri Design System.",
+      "start_date": "",
+      "end_date": "",
+      "img_alt": "",
+      "img_src": ""
+    },
+    {
       "name": "University of Missouri Design System",
       "url": "https://designsystem.missouri.edu",
       "description": "",
