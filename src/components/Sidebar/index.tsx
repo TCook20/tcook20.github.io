@@ -23,8 +23,8 @@ const Sidebar = () => {
       <ContactCard
         name={ 'Travis W. Cook' }
         position={ 'Front End Developer' }
-        email={ 'twcook2007@gmail.com' }
         socialContacts = { [
+          { title: "email", link: "mailto:twcook2007@gmail.com" },
           { title: "GitHub", link: "https://github.com/" },
           { title: "LinkedIn", link: "https://linkedin.com/" }
         ] }
