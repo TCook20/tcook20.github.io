@@ -10,6 +10,7 @@ export interface SocialLinkProps {
 
 export const SocialLink = ({ src, title }: SocialLinkProps ) => {
   const icons: { [key: string]: React.ReactNode } = {
+    email: <i className={ classnames( 'material-icons' ) }>email</i>,
     GitHub: <GitHubIcon />,
     LinkedIn: <LinkedInIcon />
   };
@@ -17,7 +18,7 @@ export const SocialLink = ({ src, title }: SocialLinkProps ) => {
   const SocialIcon = icons[ title ];
 
   return (
-    <a href={ src } title={ `${ title } Profile Link` } className="">{ SocialIcon }</a>
+    <a href={ src } title={ `${ title } Profile Link` } className="social-link">{ SocialIcon }</a>
   )
 }
 
