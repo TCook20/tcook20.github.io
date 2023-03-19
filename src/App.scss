@@ -18,8 +18,28 @@
   }
 }
 
-main {
+.App {
+  background-color: #111;
+}
+
+.app-wrapper {
+  max-width: 994px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-main {
   display: grid;
   grid-template-columns: 1.5fr 4fr;
   grid-gap: 1rem;
+  background-color: #111;
+  color: #FFF;
+}
+
+a {
+  color: #fff;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
