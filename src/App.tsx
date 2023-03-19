@@ -18,16 +18,18 @@ const App = ({ title= 'Portfolio Site' }: AppProps) => {
   return (
     <Router>
       <div className={ classnames( 'App' ) }>
-        <Header title={title} />
-        <main>
-          <Sidebar />
-          <article>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-            </Routes>
-          </article>  
-        </main>
+        <div className={ classnames( 'app-wrapper' ) }>
+          <Header title={title} />
+          <main className='grid-main'>
+            <Sidebar />
+            <article>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+              </Routes>
+            </article>  
+          </main>
+        </div>
       </div>
     </Router>
   )
