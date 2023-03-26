@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import './App.scss'
 
 // Components
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import Home from './components/Pages/Home'
@@ -29,6 +30,7 @@ const App = ({ title= 'Portfolio Site' }: AppProps) => {
               </Routes>
             </article>  
           </main>
+          <Footer />
         </div>
       </div>
     </Router>
