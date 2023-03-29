@@ -1,0 +1,18 @@
+.social-list {
+  padding: 0.5rem;
+}
+
+.social-link {
+  padding: 0rem 0.5rem;
+  color: initial;
+
+  .material-icon {
+    color: #111;
+  }
+
+  &:hover {
+    i, svg {
+      color: #C850A0;
+    }
+  }
+}

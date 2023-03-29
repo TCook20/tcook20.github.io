@@ -1,7 +1,38 @@
 {
   "projects": [
     {
+      "name": "Mizzou WordPress Hybrid Theme",
+      "slug": "miz-hybrid-theme",
+      "url": "",
+      "description": "",
+      "start_date": "",
+      "end_date": "",
+      "img_alt": "",
+      "img_src": ""
+    },
+    {
+      "name": "University of Missouri Tuition Calculator",
+      "slug": "tuition-calc",
+      "url": "https://cashiers.missouri.edu/cost/new-tuition-structure/",
+      "description": "React-based calculator.",
+      "start_date": "",
+      "end_date": "",
+      "img_alt": "",
+      "img_src": ""
+    },
+    {
+      "name": "University of Missouri Custom WordPress Blocks",
+      "slug": "miz-blocks",
+      "url": "",
+      "description": "Custom built WordPress blocks utilizing the University of Missouri Design System.",
+      "start_date": "",
+      "end_date": "",
+      "img_alt": "",
+      "img_src": ""
+    },
+    {
       "name": "University of Missouri Design System",
+      "slug": "miz-ds",
       "url": "https://designsystem.missouri.edu",
       "description": "",
       "img_src": "",
@@ -9,6 +40,7 @@
     },
     {
       "name": "Majors at Mizzou",
+      "slug": "mu-majors",
       "url": "https://majors.missouri.edu",
       "description": "",
       "img_src": "",
@@ -16,6 +48,7 @@
     },
     {
       "name": "General Education Program",
+      "slug": "mu-gened",
       "url": "https://generaleducation.missouri.edu",
       "description": "",
       "img_src": "",
@@ -23,6 +56,7 @@
     },
     {
       "name": "MU Career Center",
+      "slug": "mucc",
       "url": "https://career.missouri.edu",
       "description": "",
       "img_src": "",
@@ -30,6 +64,7 @@
     },
     {
       "name": "Office of Civil Rights & Title IX",
+      "slug": "mu-equity",
       "url": "https://civilrights.missouri.edu",
       "description": "",
       "img_src": "",

@@ -7,8 +7,8 @@ export interface HeaderProps {
 
 const Header = ({ title = 'Portfolio Site' }: HeaderProps) => {
   return (
-    <header>
-      <h1>{ title }</h1>
+    <header className='site-header'>
+      <h1 className='site-header__title'>{ title }</h1>
     </header>
   );
 }

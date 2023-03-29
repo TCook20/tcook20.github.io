@@ -1,0 +1,30 @@
+.navigation {
+  padding: 1rem 0rem;
+}
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0rem;
+}
+
+.nav-item {
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #000;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #C850A0;
+      color: #FFF;
+      transition: ease-in;
+    }
+
+    &.active {
+      background-color: #388c54;
+      color: #111;
+    }
+  }
+}
+
